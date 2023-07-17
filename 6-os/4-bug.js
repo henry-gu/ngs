@@ -1,6 +1,6 @@
 function convertArrayToObject(arr) {
-  return arr.reduce((curr, acc) => {
-    acc[curr[0]] = curr[1];
+  return arr.reduce((acc, curr) => {
+    acc[curr[0]-1] = curr[1];
     return acc;
   }, {});
 }
